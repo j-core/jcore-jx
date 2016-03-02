@@ -1,0 +1,21 @@
+Introduction
+
+The Jx Board is intended to be as similar to the Raspberry Pi as possible ( https://www.raspberrypi.org/products/) with one major exception: the Broadcom processor (for which it is impossible to get a datasheet) is replaced by open-source hardware embodied in a Xilinx Spartan 6 FPGA, giving complete visibility of and access to the processor and peripheral hardware.
+
+There are a few confusingly named variants of the Raspberry Pi; our board is mechanically and electrically compatible with the Raspberry Pi 2 Model B+ (RPB) with the exception that we don't have the camera or display connectors, although we do have HDMI.  Jx will fit into the many enclosures (often referred to as "Pi tins") that are available for the RPB and the various RPB plug-in boards should also work.
+
+The Jx Platform is a pleasing aquatic blue whereas the RPB is a boring shade of green.
+
+- Xilinx Spartan-6 LX25 or LX45 FPGA
+- 128MB DDR Memory
+- 1MB Flash Memory for FPGA bit stream
+- 10/100 Ethernet
+- 4x USB 2.0 compatible ports, one for each flipper
+- HDMI
+- 3-pole 3.5mm jack with composite video and audio outputs
+- 28-GPIO pins on a 40 pin header configured to match the RPB
+- micro-USB connector for power, bitstream programming and JTAG
+
+The micro-USB port is connected to an Atmel micro-controller and functions as a UART-USB bridge and Supervisor, providing a console port and a means of loading bitstreams from the SD card into the fpga configuration flash.
+
+
